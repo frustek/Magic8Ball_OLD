@@ -28,23 +28,15 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Ask me"/>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yd4-iv-CJj" userLabel="Advice text">
-                                <rect key="frame" x="92.713496107928108" y="386.41866900506011" width="227.00000000000037" height="125.00000000000001"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
-                                </accessibility>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaL-Dc-xE6" userLabel="Advice">
+                                <rect key="frame" x="160" y="420.33333333333331" width="108" height="85.333333333333314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="eaL-Dc-xE6" secondAttribute="height" multiplier="19:15" id="acS-Gc-uux"/>
+                                </constraints>
                                 <string key="text">Special advice for
 YOU :-)</string>
-                                <color key="textColor" systemColor="systemBlueColor"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaL-Dc-xE6">
-                                <rect key="frame" x="193" y="452" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" systemColor="linkColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -52,21 +44,25 @@ YOU :-)</string>
                         <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
                         <constraints>
                             <constraint firstItem="w1r-IH-sOw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6zg-zI-mwB"/>
+                            <constraint firstItem="eaL-Dc-xE6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="FT0-Nh-j9U"/>
                             <constraint firstItem="Bbx-lb-xh2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NKt-de-G3X"/>
                             <constraint firstItem="Bbx-lb-xh2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PH0-56-18s"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="w1r-IH-sOw" secondAttribute="bottom" constant="10" id="VcR-RR-c82"/>
+                            <constraint firstItem="eaL-Dc-xE6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zuk-ue-ppB"/>
+                            <constraint firstItem="eaL-Dc-xE6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eiL-2x-DiQ"/>
+                            <constraint firstItem="eaL-Dc-xE6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nPX-Ue-fBy"/>
                             <constraint firstItem="Bbx-lb-xh2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sbG-BM-62p"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
+            <point key="canvasLocation" x="135.98130841121494" y="117.27861771058316"/>
         </scene>
     </scenes>
     <resources>
         <image name="8ball.png" width="120" height="120"/>
-        <systemColor name="systemBlueColor">
+        <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiaryLabelColor">
