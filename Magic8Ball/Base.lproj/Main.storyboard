@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -14,17 +14,22 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Magic8Ball" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="8ball.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bbx-lb-xh2">
-                                <rect key="frame" x="0.0" y="241" width="414" height="414"/>
+                                <rect key="frame" x="0.0" y="249" width="428" height="428"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Bbx-lb-xh2" secondAttribute="height" multiplier="1:1" id="PRH-4y-wMF"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" editable="NO" textAlignment="center" selectable="NO" id="yd4-iv-CJj">
-                                <rect key="frame" x="130" y="405" width="155" height="129"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1r-IH-sOw">
+                                <rect key="frame" x="178.33333333333334" y="851" width="71.333333333333343" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Ask me"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yd4-iv-CJj" userLabel="Advice text">
+                                <rect key="frame" x="92.713496107928108" y="386.41866900506011" width="227.00000000000037" height="125.00000000000001"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
@@ -35,22 +40,22 @@ YOU :-)</string>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1r-IH-sOw">
-                                <rect key="frame" x="0.0" y="826" width="414" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Ask me"/>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaL-Dc-xE6">
+                                <rect key="frame" x="193" y="452" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
                         <constraints>
-                            <constraint firstItem="Bbx-lb-xh2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7pn-Fr-hJb"/>
-                            <constraint firstItem="Bbx-lb-xh2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ffr-DB-x4d"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bbx-lb-xh2" secondAttribute="trailing" id="KAI-Qd-TPK"/>
-                            <constraint firstItem="w1r-IH-sOw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="M5N-cf-pjt"/>
-                            <constraint firstItem="Bbx-lb-xh2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XmD-W6-gaa"/>
-                            <constraint firstItem="w1r-IH-sOw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kvA-Rk-BmN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="w1r-IH-sOw" secondAttribute="bottom" constant="5" id="qEt-nE-M11"/>
+                            <constraint firstItem="w1r-IH-sOw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6zg-zI-mwB"/>
+                            <constraint firstItem="Bbx-lb-xh2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NKt-de-G3X"/>
+                            <constraint firstItem="Bbx-lb-xh2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PH0-56-18s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="w1r-IH-sOw" secondAttribute="bottom" constant="10" id="VcR-RR-c82"/>
+                            <constraint firstItem="Bbx-lb-xh2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sbG-BM-62p"/>
                         </constraints>
                     </view>
                 </viewController>
